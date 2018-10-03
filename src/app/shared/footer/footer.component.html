@@ -7,24 +7,24 @@
         <li class="rk-menu__item" routerLinkActive="active"><a routerLink="about" class="rk-menu__link">About</a>
         </li>
       </ul>
-      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{year}} Mamesoke </span>All Right Reserved.</p>
+      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{year}} {{infoPage.info.author}} </span>All Right Reserved.</p>
     </div>
-    <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
+    <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+      <a href="{{infoPage.info.website}}" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-        </svg></a><a href="#0" class="rk-social-btn ">
+        </svg>
+      </a>
+      <a href="{{infoPage.info.twitter}}" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-        </svg></a><a href="#0" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-        </svg></a><a href="#0" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
-        </svg></a></div>
+        </svg>
+      </a>
+    </div>
+
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-      <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">mamesoke@gmail.com </a></span></p>
-      <p class="rk-footer__text rk-footer__by">Theme by <a href="http://twitter.com/mamesoke" class="ae-u-bolder">@Mamesoke.</a></p>
+      <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="mailto:{{infoPage.info.email}}" class="rk-dark-color ">{{infoPage.info.email}} </a></span></p>
+      <p class="rk-footer__text rk-footer__by">Theme by <a href="{{infoPage.info.twitter}}" class="ae-u-bolder">@{{infoPage.info.author}}.</a></p>
     </div>
   </div>
 </footer>
