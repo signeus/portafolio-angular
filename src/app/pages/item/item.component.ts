@@ -17,12 +17,10 @@ export class ItemComponent implements OnInit {
             private _langService: LangService,
             public productService: ProductsService) {
     this.route.params.subscribe( parameters => {
-      console.log(parameters['id']);
       this.id = parameters['id'];
       this.productService.getProduct(parameters['id']).subscribe((resp: Item) =>  {
         this.product = resp;
         this.loaded = true;
-        console.log(this.product);
       });
     });
   }
