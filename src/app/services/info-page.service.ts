@@ -14,7 +14,6 @@ export class InfoPageService {
 
   loaded = false;
 
-
   constructor(private _httpClient: HttpClient) {
     this.loadInfo();
     this.loadTeam();
@@ -30,6 +29,7 @@ export class InfoPageService {
   private loadTeam() {
     this._httpClient.get(this.urlTeam).subscribe((resp: [Team]) => {
       this.team = resp;
+      this.loaded = true;
     });
   }
 

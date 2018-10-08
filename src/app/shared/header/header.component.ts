@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoPageService } from '../../services/info-page.service';
-import { InfoPage } from './../../interfaces/info-page.interface';
 
 @Component({
   selector: 'app-header',

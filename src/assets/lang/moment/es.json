@@ -1,0 +1,17 @@
+{
+  "months" : ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
+  "monthsShort" : ["ene.","feb.","mar","abr.","may","jun","jul.","ago","sep.","oct.","nov.","dic."],
+  "monthsParseExact" : "true",
+  "weekdays" : ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],
+  "weekdaysShort" : ["Dom.","Lun.","Mar.","Mie.","Jue.","Vie.","Sab."],
+  "weekdaysMin" : ["Do","Lu","Ma","Mi","Ju","Vi","Sa"],
+  "weekdaysParseExact" : "true",
+  "longDateFormat" : {
+      "LT" : "HH:mm",
+      "LTS" : "HH:mm:ss",
+      "L" : "DD/MM/YYYY",
+      "LL" : "D MMMM YYYY",
+      "LLL" : "D MMMM YYYY HH:mm",
+      "LLLL" : "dddd D MMMM YYYY HH:mm"
+  }
+}

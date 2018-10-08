@@ -15,6 +15,8 @@ import { ItemComponent } from './pages/item/item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
 
+// Secondary services
+// import { LangService } from './services/lang.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    LoadingComponent
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

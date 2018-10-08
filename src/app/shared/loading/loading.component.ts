@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../../services/products.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-loading',
@@ -7,8 +6,9 @@ import { ProductsService } from '../../services/products.service';
   styleUrls: ['./loading.component.css']
 })
 export class LoadingComponent implements OnInit {
+  @Input() loaded: boolean;
 
-  constructor(public productsService: ProductsService) { }
+  constructor() { }
 
   ngOnInit() {
   }

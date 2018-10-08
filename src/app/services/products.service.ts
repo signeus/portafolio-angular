@@ -10,8 +10,9 @@ export class ProductsService {
   loaded = false;
 
   urlBase = 'https://ng-projects-333.firebaseio.com/';
-  urlProductsIdx = 'products_idx.json';
-  urlProducts = 'products.json';
+  urlProductsIdx = 'products_idx';
+  urlProducts = 'products';
+  extensionFile = '.json';
   products: [Product] = [{}];
 
   constructor(private _http: HttpClient) {
@@ -19,14 +20,13 @@ export class ProductsService {
   }
 
   private loadProducts() {
-    this._http.get(this.urlBase + this.urlProductsIdx).subscribe((resp: any) =>  {
+    this._http.get(this.urlBase + this.urlProductsIdx + this.extensionFile).subscribe((resp: any) =>  {
       this.products = resp;
       this.loaded = true;
     });
+  }
 
-    // this._http.get(this.urlBase + this.urlProducts).subscribe((resp: any) =>  {
-    //   this.loaded = true;
-    //   this.products = resp;
-    // });
+  public getProduct(item: string) {
+    return this._http.get(`${this.urlBase}${this.urlProducts}/${item}${this.extensionFile}`);
   }
 }
