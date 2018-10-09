@@ -14,6 +14,7 @@ import { ItemComponent } from './pages/item/item.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { SearchComponent } from './pages/search/search.component';
 
 // Secondary services
 // import { LangService } from './services/lang.service';
@@ -26,6 +27,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     AboutComponent,
     ItemComponent,
     LoadingComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
